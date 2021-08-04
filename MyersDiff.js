@@ -6,8 +6,8 @@
 
 /**
  * myersDiff
- * @param {String} oldText Texto previo
- * @param {String} newText Texto actual
+ * @param {String} oldText Old Text
+ * @param {String} newText New Text
  */
 
 const myersDiff = (oldText, newText) => {
@@ -146,10 +146,10 @@ const produceDiff = (old, actual, produce) => {
   }
   const result = {
     hasChanges,
-    oldDelete: del,
     newInsert: ins,
-    oldSet: oldSet,
     newSet: actualSet,
+    oldDelete: del,
+    oldSet: oldSet,
   };
   return result;
 };
